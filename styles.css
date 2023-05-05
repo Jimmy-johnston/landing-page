@@ -12,6 +12,7 @@ body {
     font-size: 18px;
     /* background: black; */
     padding: 0 160px;
+    max-width: 100%;
 
 }
 
@@ -25,9 +26,15 @@ h1, h2, h3 {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
+.container {
+    /* max-width: 1100px;
+    margin: 0 auto; */
+    padding: 0 220px;
+}
+
 .navbar {
     background: #1F2937;
     height: 50px;
@@ -51,14 +58,54 @@ ul {
 .navbar .container{
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 220px;
 }
 
 .navbar .container .nav{
     display: flex;
 }
 
-.navbar li {
+.navbar ul li {
     margin-left: 20px;
+}
+
+.header {
+    background: #1F2937;
+    min-height: 500px;
+}
+
+.header h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header p {
+    color: #E5E7EB;
+}
+
+.header button {
+    background-color: #3882F6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 35px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.header img {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 70px;
 }
