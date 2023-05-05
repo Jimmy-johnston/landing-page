@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background: rgb(26, 26, 26);
-    padding: 0 160px;
+    padding: 0 140px;
     max-width: 100%;
 
 }
@@ -30,8 +30,8 @@ ul {
     padding: 0; */
 }
 .container {
-    /* max-width: 1100px;
-    margin: 0 auto; */
+    max-width: 2000px;
+    margin: 0 auto;
     padding: 0 220px;
 }
 
@@ -130,6 +130,7 @@ ul {
     border: #3882F6;
     border-style: solid;
     border-radius: 10px;
+    /* flex: 1; */
 }
 
 .info .container {
@@ -148,3 +149,33 @@ ul {
     margin: 0 30px;
 }
 
+.quote {
+    background: #E5E7EB;
+    height: 500px;
+}
+
+.quote .container {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    flex-direction: column;
+    /* padding: 50px; */
+}
+
+.quote .container .inspire {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    margin-top: 140px;
+}
+
+.quote .container .thor {
+    align-self: flex-end;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #1F2937;
+    /* padding: 10px; */
+    margin-right: 40px;
+
+}
