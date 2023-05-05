@@ -10,7 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    /* background: black; */
+    background: rgb(26, 26, 26);
     padding: 0 160px;
     max-width: 100%;
 
@@ -109,3 +109,42 @@ ul {
     align-items: flex-start;
     padding-top: 70px;
 }
+
+.info {
+    text-align: center;
+    background: white;
+    color: grey;
+    min-height: 500px;
+}
+
+.info h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+.info img {
+    height: 170px;
+    width: 170px;
+    border: #3882F6;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info .container ul {
+    display: flex;
+}
+
+.info .container li {
+    width: 170px;
+    margin: 0 30px;
+}
+
