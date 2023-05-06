@@ -94,6 +94,19 @@ ul {
     color: #E5E7EB;
 }
 
+
+
+.header img {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 /*  basic button
     .header button {
     background-color: #3882F6;
@@ -147,17 +160,6 @@ ul {
 .header button:hover:after {
     opacity: 1;
     right: 10px;
-}
-
-.header img {
-    max-width: 500px;
-    margin-left: 40px;
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
 }
 
 .info {
@@ -253,6 +255,12 @@ ul {
     flex-basis: 800px;
 }
 
+.signup h3 {
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
 /*  basic button
     .signup .button {
     background-color: #3882F6;
@@ -308,12 +316,6 @@ ul {
 .signup button:hover:after {
     opacity: 1;
     right: 10px;
-}
-
-.signup h3 {
-    font-weight: 700;
-    font-size: x-large;
-    margin-bottom: 0;
 }
 
 .footer {
