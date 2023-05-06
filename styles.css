@@ -34,7 +34,7 @@ ul {
     /* margin and padding not doing anything */
 }
 .container {
-    max-width: 100%;
+    /* max-width: 1100px; */
     margin: 0 auto;
     padding: 0 220px;
 }
@@ -64,10 +64,10 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 220px;
+    /* padding: 0 220px; */
 }
 
-.navbar .container .nav{
+.navbar .container .nav {
     display: flex;
 }
 
@@ -81,6 +81,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -95,13 +96,15 @@ ul {
 }
 
 .header img {
-    max-width: 500px;
+    min-width: 400px;
+    max-width: 600px;
+    flex: 1 1;
     margin-left: 40px;
 }
 
 .header .container {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: flex-start;
 }
 
@@ -178,8 +181,8 @@ ul {
 }
 
 .info img {
-    height: 170px;
-    width: 170px;
+    min-height: 170px;
+    min-width: 170px;
     border: #3882F6;
     border-style: solid;
     border-radius: 10px;
@@ -189,6 +192,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .info .container ul {
@@ -196,20 +200,24 @@ ul {
 }
 
 .info .container li {
-    width: 170px;
+    /* min-width: 170px; */
+    max-width: 250px;
+    /* min-height: 170px; */
+    max-height: 250px;
     margin: 0 30px;
+    /* I think the pictures different original sizing is messing up the screen size responsiveness */
 }
 
 .quote {
     background: #E5E7EB;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .quote .container {
-    width: 1350px;
+    max-width: 1350px;
     /* width above to match info contatainer otherwise it is matching padding from body*/
     display: flex;
     flex-wrap: wrap;
@@ -242,7 +250,7 @@ ul {
 }
 
 .signup .container {
-    height: 160px;
+    min-height: 160px;
     background-color: #3882F6;
     border-radius: 10px;
     display: flex;
@@ -316,21 +324,22 @@ ul {
 .footer {
     background: #1F2937;
     color: #E5E7EB;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: auto;
 }
 
+
 /* @media (max-width: 768px) {
-    .header .container {
+    .info .container {
       flex-direction: column;
       padding-top: 20px;
-      text-align: center;
+      flex-wrap: wrap;
     } 
 
-.info .container {
+    .info .container {
         display: block;
         text-align: center;
       }
