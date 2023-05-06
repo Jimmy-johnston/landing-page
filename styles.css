@@ -170,6 +170,7 @@ ul {
     /* width above to match info contatainer otherwise it is matching padding from body*/
     display: flex;
     flex-wrap: wrap;
+    padding: 0 350px;
 }
 
 .quote .container .inspire {
@@ -192,15 +193,14 @@ ul {
 .signup {
     background: white;
     color:#F9FAF8;
-    min-height: 300px;
+    min-height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .signup .container {
-    height: 150px;
-    max-width: fit-content;
+    height: 160px;
     background-color: #3882F6;
     border-radius: 10px;
     display: flex;
@@ -214,17 +214,24 @@ ul {
     font-size: 16px;
     font-weight: bold;
     padding: 8px 35px;
-    /* margin-top: 12px; */
     border-radius: 10px;
     border-style: solid;
     border-color: #F9FAF8;
-    /* margin-left: 80px; */
-    /* align-self: flex-end; */
-
+    margin-left: 100px;
 }
 
 .signup h3 {
     font-weight: 700;
     font-size: x-large;
     margin-bottom: 0;
+}
+
+.footer {
+    background: #1F2937;
+    color: #E5E7EB;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
