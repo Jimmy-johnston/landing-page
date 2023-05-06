@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/roboto');
                 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     
@@ -15,6 +15,7 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
@@ -77,6 +78,9 @@ ul {
 .header {
     background: #1F2937;
     min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header h1 {
@@ -110,8 +114,6 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 100px;
-    /* padding is what I am using to align center the info container */
 }
 
 .info {
@@ -119,13 +121,16 @@ ul {
     background: white;
     color: grey;
     min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info h2 {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
-    margin: 40px;
+    margin-bottom: 50px;
 }
 
 .info img {
@@ -155,6 +160,9 @@ ul {
 .quote {
     background: #E5E7EB;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote .container {
@@ -169,9 +177,6 @@ ul {
     font-style: italic;
     font-weight: 100;
     color: #1F2937;
-    margin-top: 150px;  
-    /* margin is what I am using to align center */
-    /* don't understand how to get the font thinner to match */
 }
 
 .quote .container .thor {
@@ -182,4 +187,44 @@ ul {
     padding-top: 10px;
     margin-right: 50px;
     margin-left: auto;
+}
+
+.signup {
+    background: white;
+    color:#F9FAF8;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup .container {
+    height: 150px;
+    max-width: fit-content;
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.signup .button {
+    background-color: #3882F6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 35px;
+    /* margin-top: 12px; */
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #F9FAF8;
+    /* margin-left: 80px; */
+    /* align-self: flex-end; */
+
+}
+
+.signup h3 {
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 0;
 }
